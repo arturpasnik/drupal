@@ -1,0 +1,4 @@
+name = "Scrums Test"
+description = "Connect to Scrums API"
+package = "SCRUMS"
+core = 7.x

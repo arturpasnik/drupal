@@ -1,0 +1,13 @@
+<?php
+function scrums_menu(){
+	$items['scrums/%'] = array(
+		'title' => "Scrums",
+		'page callback' => "scrums_show_test_page",
+		'page arguments' => array(1),
+		'access arguments' => array('access content'),
+		'file'=> "scrums.page.inc",
+		'type' => MENU_CALLBACK,
+	);
+
+	return $items;
+}

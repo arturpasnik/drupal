@@ -1,0 +1,5 @@
+name = "Fixtures and Results from SCRUMS"
+description = "Fixtures and Results from SCRUMS"
+files[] = AuthScrums.php
+package = "SCRUMS"
+core = 7.x

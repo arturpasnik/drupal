@@ -1,0 +1,23 @@
+<?php
+function fixtures_and_results_menu(){
+
+	$items['fixtures-and-results'] = array(
+		'title' => "Fixtures and Results",
+		'page callback' => "fixtures_and_results_page",
+		'page arguments' => array(1),
+		'access arguments' => array('access content'),
+		'file'=> "fixtures_and_results.page.inc",
+		'type' => MENU_CALLBACK,
+	);
+
+	$items['fixtures-and-results/%'] = array(
+		'title' => "Fixtures and Results",
+		'page callback' => "fixtures_and_results_page",
+		'page arguments' => array(1),
+		'access arguments' => array('access content'),
+		'file'=> "fixtures_and_results.page.inc",
+		'type' => MENU_CALLBACK,
+	);
+
+	return $items;
+}
