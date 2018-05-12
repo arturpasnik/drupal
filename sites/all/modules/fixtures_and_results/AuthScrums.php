@@ -3,9 +3,9 @@
 class AuthScrums
 {
 
-	private $_url = 'http://scrums.local/';
+	private $_url = 'https://scrums.scottishrugby.org/';
 	private $_clientId = 3;
-	private $_clientSecret = 'A6dh4ZrNiTiiCCD41y8GTZbSlnZGALSp9itLZy20';
+	private $_clientSecret = 'sdcqwLWYfUPgSvgtyQftjkWk2nb0TEYwt9Gvi05w';
 	private $_token = null;
 	private $_token_expire_time = 60*60*24; // 1 DAY
 
