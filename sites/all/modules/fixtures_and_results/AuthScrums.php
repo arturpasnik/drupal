@@ -4,8 +4,8 @@ class AuthScrums
 {
 
 	private $_url = 'http://scrums.local/';
-	private $_clientId = 5;
-	private $_clientSecret = 'rWwZUcRl0CibXYFtY6B8AarYx4pzNwgQwaQlvsNR';
+	private $_clientId = 3;
+	private $_clientSecret = 'A6dh4ZrNiTiiCCD41y8GTZbSlnZGALSp9itLZy20';
 	private $_token = null;
 	private $_token_expire_time = 60*60*24; // 1 DAY
 
@@ -53,7 +53,7 @@ class AuthScrums
 
 		//close connection
 		curl_close($ch);
-
+		var_dump($result);
 		if ($result) {
 			$this->_token = json_decode($result,true);
 			$this->_token['expires_in'] = time() + $this->_token_expire_time;
@@ -65,7 +65,7 @@ class AuthScrums
 
 	public function getData($url)
 	{
-		$targetUrl = $this->_url.'/web_client/'. $url;
+		$targetUrl = $this->_url.'/web_client_v1/'. $url;
 		$headers = [
 			'Authorization: Bearer ' . $this->_token['access_token'],
 			'Accept: application/json'
