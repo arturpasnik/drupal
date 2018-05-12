@@ -65,7 +65,7 @@ class AuthScrums
 
 	public function getData($url)
 	{
-		$targetUrl = $this->_url.'/web_client_v1/'. $url;
+		$targetUrl = $this->_url.'/web-client-v1/'. $url;
 		$headers = [
 			'Authorization: Bearer ' . $this->_token['access_token'],
 			'Accept: application/json'
